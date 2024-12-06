@@ -1,23 +1,38 @@
-.mesaj {
-  float: left;
-  width: 300px;
-  padding: 15px;
-  margin: 15px;
-  color: #fff;
-  text-align: center;
+@mixin display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
 }
 
-.box {
-  @extend .mesaj;
+body {
+  @include display();
+  background-color: wheat;
+}
+
+.container {
+  @extend body;
+  @include size(50vw, 50vh);
+  gap: 50px;
+  padding: 10px;
   background-color: darkblue;
-}
+  color: goldenrod;
 
-.box2 {
-  @extend .mesaj;
-  background-color: goldenrod;
-}
+  &__box1 {
+    @extend .container;
+    @include size(10vw, 30vh);
+    background-color: goldenrod;
+    color: darkblue;
+  }
 
-.box3 {
-  @extend .mesaj;
-  width: 200px; //* Varolan özellik değişti
+  &__box2 {
+    @extend .container__box1;
+  }
+
+  &__box3 {
+    @extend .container__box1;
+  }
 }

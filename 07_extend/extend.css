@@ -1,22 +1,23 @@
-.mesaj, .box3, .box2, .box {
-  float: left;
-  width: 300px;
-  padding: 15px;
-  margin: 15px;
-  color: #fff;
-  text-align: center;
+body, .container, .container__box1, .container__box3, .container__box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
 }
 
-.box {
+.container, .container__box1, .container__box3, .container__box2 {
+  width: 50vw;
+  height: 50vh;
+  gap: 50px;
+  padding: 10px;
   background-color: darkblue;
+  color: goldenrod;
 }
-
-.box2 {
+.container__box1, .container__box3, .container__box2 {
+  width: 10vw;
+  height: 30vh;
   background-color: goldenrod;
-}
-
-.box3 {
-  width: 200px;
+  color: darkblue;
 }
 
 /*# sourceMappingURL=extend.css.map */
