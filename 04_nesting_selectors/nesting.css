@@ -1,3 +1,9 @@
+body, .alternative__section--last, .alternative__section, .alternative {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .icerik {
   float: left;
   width: 300px;
@@ -6,7 +12,6 @@
 }
 .icerik h1 {
   font-size: 18px;
-  color: red;
 }
 .icerik p {
   font-size: 14px;
@@ -16,6 +21,25 @@
 }
 .icerik ul li {
   font-size: 13px;
+}
+
+.alternative {
+  width: 30vh;
+  height: 30vh;
+  background-color: darkblue;
+  color: goldenrod;
+}
+.alternative__section {
+  width: 25vh;
+  height: 25vh;
+  background-color: goldenrod;
+}
+.alternative__section--last {
+  width: 20vh;
+  height: 20vh;
+  background-color: darkblue;
+  color: goldenrod;
+  text-align: center;
 }
 
 /*# sourceMappingURL=nesting.css.map */

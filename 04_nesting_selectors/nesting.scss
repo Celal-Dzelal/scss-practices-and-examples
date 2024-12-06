@@ -1,4 +1,12 @@
 $font-size: 18px;
+$width: 30vh;
+$height: 30vh;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .icerik {
   float: left;
@@ -8,7 +16,7 @@ $font-size: 18px;
 
   h1 {
     font-size: $font-size;
-    color: red;
+    // color: red;
   }
 
   p {
@@ -20,6 +28,29 @@ $font-size: 18px;
 
     li {
       font-size: $font-size - 5;
+    }
+  }
+}
+
+.alternative {
+  width: $width; //* width değişkenden alındı
+  height: $height; //* height değişenden alındı
+  background-color: darkblue;
+  color: goldenrod;
+  @extend body; //* body'nin bir takım özellikleri aktarıldı
+
+  &__section {
+    width: $width - 5; //* width değişkenden alındı ve "-" operatörü ile 5 azaltıldı
+    height: $height - 5; //* height değişkenden alındı ve "-" operatörü ile 5 azaltıldı
+    background-color: goldenrod;
+    @extend body; //* body'nin bir takım özellikleri aktarıldı
+    &--last {
+      width: $width - 10; //* width değişkenden alındı ve "-" operatörü ile 10 azaltıldı
+      height: $height - 10; //* height değişkenden alındı ve "-" operatörü ile 5 azaltıldı
+      background-color: darkblue;
+      color: goldenrod;
+      @extend body; //* body'nin bir takım özellikleri aktarıldı
+      text-align: center;
     }
   }
 }
