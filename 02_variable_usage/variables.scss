@@ -1,17 +1,24 @@
 //! Değişkenler "$" ile tanımlanır
 
-$renk: #000;
+$renk: #1907fb;
 $boyut: 400px;
 $yükseklik: 600;
+$font-size: 3rem;
+$color: goldenrod;
 
 .kutu {
   background-color: $renk;
   width: $boyut;
-  height: $yükseklik + px; //* birim + operatörü ile selector içinde eklenebilir
+  height: $yükseklik + px;
+  font-size: $font-size;
+  //* birim + operatörü ile selector içinde eklenebilirü
 }
 
 .kutu2 {
   //* Matematiksel operatör kullanımına izin verir
   width: $boyut / 2;
   height: $yükseklik * 2 + px;
+  background-color: $renk;
+  color: $color;
+  font-size: $font-size / 2;
 }

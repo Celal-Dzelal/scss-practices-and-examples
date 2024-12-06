@@ -1,12 +1,16 @@
 .kutu {
-  background-color: #000;
+  background-color: #1907fb;
   width: 400px;
   height: 600px;
+  font-size: 3rem;
 }
 
 .kutu2 {
   width: 200px;
   height: 1200px;
+  background-color: #1907fb;
+  color: goldenrod;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=variables.css.map */
