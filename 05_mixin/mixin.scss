@@ -1,0 +1,35 @@
+@mixin boyut($g, $y) {
+  width: $g;
+  height: $y;
+}
+
+@mixin renk($bc, $c) {
+  background-color: $bc;
+  color: $c;
+}
+
+@mixin threeDots {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.urunList {
+  float: left;
+  border: 1px solid gray;
+  @include boyut(500px, 250px);
+  @include renk(#ebebeb, #000);
+  @include threeDots();
+}
+
+.detay {
+  float: left;
+  @include boyut(300px, 150px);
+  @include renk(darkblue, goldenrod);
+  @include threeDots();
+}
+
+.kutu {
+  @include boyut($y: 400px, $g: 600px);
+  //* Parametre yeri değiştirme
+}

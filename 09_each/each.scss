@@ -1,0 +1,7 @@
+$boyutlar: 1, 2, 3, 4, 5, 6;
+
+@each $boyut in $boyutlar {
+  .p#{$boyut} {
+    font-size: $boyut + px;
+  }
+}

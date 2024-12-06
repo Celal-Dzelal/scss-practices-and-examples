@@ -1,0 +1,86 @@
+//! Dosya Parçalama ve @use
+
+// _variable.scss
+$secondary-color: #256734;
+
+// main.scss
+@use "./variables/variables";
+body {
+  background-color: variables.$secondary-color;
+}
+
+//! Temel yazımda css'ten fark yok
+
+.kutu {
+  float: left;
+  width: 100px;
+}
+
+//! Değişken Kullanımı: $ sembolü ile değişken kullanılır
+
+$primary-color: #3498db;
+$font-size: 16px;
+
+//! İç İçe Yazım (Nesting): Parent-Child ilişkisi css'ten farklı şekilde kurulabilir.
+
+nav {
+  ul {
+    margin: 0;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+//! Mixin ve Include: Tekrar eden kod blokları için @mixin ile şablon oluşturulur, @include ile çağrılır. Css'te olmayan özellik.
+
+//* @mixin'e bağlı flex-center'da belirtilen özellikler @include ile istediğimiz alanda çağırılarak aynı kodların tekrar kullanımı zahmetinden kurtarır.
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  @include flex-center();
+}
+
+//! Embedded Media Query: Media query ilgili seçici içine yazılabilir
+
+.container {
+  width: 100%;
+
+  @media screen and (min-width: 758px) {
+    width: 80%;
+  }
+}
+
+//! Math Operators: Matematiksel işlem yapılabilir
+
+$base-size: 16px; //* Değişken
+
+.container {
+  font-size: $base-size * 1.5;
+}
+
+//! Shorthand: İç içe ve "&" ile seçiciler daha kısa şekilde tanımlanabilir
+
+.button {
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    //* darken ile %10 koyulaştırma işlemi. lighten ile de renk açılabilir.
+  }
+}
+
+//! @extend: Ortak özelliklere sahip sınıfları yeniden kullanmak için kullanılır.
+
+%base-button {
+  padding: 10px 20px;
+  border: none;
+}
+
+.primary-button {
+  @extend %base-button;
+  background-color: $primary-color;
+}

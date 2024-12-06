@@ -1,0 +1,23 @@
+.mesaj {
+  float: left;
+  width: 300px;
+  padding: 15px;
+  margin: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.box {
+  @extend .mesaj;
+  background-color: darkblue;
+}
+
+.box2 {
+  @extend .mesaj;
+  background-color: goldenrod;
+}
+
+.box3 {
+  @extend .mesaj;
+  width: 200px; //* Varolan özellik değişti
+}

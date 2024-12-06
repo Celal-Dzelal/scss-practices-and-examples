@@ -1,0 +1,35 @@
+@mixin stil($name) {
+  @if ($name == "FB") {
+    background-color: darkblue;
+    color: goldenrod;
+  } @else if ($name == "GS") {
+    background-color: red;
+    color: yellow;
+  } @else if ($name == "BJK") {
+    background-color: black;
+    color: white;
+  } @else {
+    background-color: red;
+    color: white;
+  }
+}
+
+.box1 {
+  padding: 10px 15px;
+  @include stil("FB");
+}
+
+.box2 {
+  @extend .box1;
+  @include stil("GS");
+}
+
+.box3 {
+  @extend .box1;
+  @include stil("BJK");
+}
+
+.box4 {
+  @extend .box1;
+  @include stil("TR");
+}

@@ -1,0 +1,25 @@
+$font-size: 18px;
+
+.icerik {
+  float: left;
+  width: 300px;
+  background-color: #ebebeb;
+  padding: 5px 10px;
+
+  h1 {
+    font-size: $font-size;
+    color: red;
+  }
+
+  p {
+    font-size: $font-size - 4;
+  }
+
+  ul {
+    padding-left: 20px;
+
+    li {
+      font-size: $font-size - 5;
+    }
+  }
+}

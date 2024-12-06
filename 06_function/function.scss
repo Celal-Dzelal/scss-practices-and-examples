@@ -1,0 +1,20 @@
+@function gridLayout($birim, $toplam) {
+  @return (100 * $birim / $toplam) + 0%;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+
+  .sol {
+    float: left;
+    width: gridLayout(3, 10);
+    background-color: blue;
+  }
+
+  .sag {
+    float: left;
+    width: gridLayout(7, 10);
+    background-color: yellow;
+  }
+}

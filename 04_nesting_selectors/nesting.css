@@ -1,0 +1,21 @@
+.icerik {
+  float: left;
+  width: 300px;
+  background-color: #ebebeb;
+  padding: 5px 10px;
+}
+.icerik h1 {
+  font-size: 18px;
+  color: red;
+}
+.icerik p {
+  font-size: 14px;
+}
+.icerik ul {
+  padding-left: 20px;
+}
+.icerik ul li {
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=nesting.css.map */

@@ -1,0 +1,22 @@
+.mesaj, .box3, .box2, .box {
+  float: left;
+  width: 300px;
+  padding: 15px;
+  margin: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.box {
+  background-color: darkblue;
+}
+
+.box2 {
+  background-color: goldenrod;
+}
+
+.box3 {
+  width: 200px;
+}
+
+/*# sourceMappingURL=extend.css.map */

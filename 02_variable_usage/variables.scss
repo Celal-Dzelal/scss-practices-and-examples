@@ -1,0 +1,17 @@
+//! Değişkenler "$" ile tanımlanır
+
+$renk: #000;
+$boyut: 400px;
+$yükseklik: 600;
+
+.kutu {
+  background-color: $renk;
+  width: $boyut;
+  height: $yükseklik + px; //* birim + operatörü ile selector içinde eklenebilir
+}
+
+.kutu2 {
+  //* Matematiksel operatör kullanımına izin verir
+  width: $boyut / 2;
+  height: $yükseklik * 2 + px;
+}

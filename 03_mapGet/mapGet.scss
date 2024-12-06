@@ -1,0 +1,20 @@
+$tema: (
+  "acik": #fff,
+  "koyu": #000,
+  "gri": #aaa,
+);
+
+$kalinlik: (
+  "ince": 300,
+  "normal": 400,
+  "kalin": 500,
+);
+
+body {
+  background-color: map-get($tema, "acik");
+}
+
+h1 {
+  color: map-get($tema, "koyu");
+  font-weight: map-get($kalinlik, "kalin");
+}

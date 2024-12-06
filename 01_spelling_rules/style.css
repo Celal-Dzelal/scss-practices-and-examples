@@ -1,0 +1,49 @@
+body {
+  background-color: #256734;
+}
+
+.kutu {
+  float: left;
+  width: 100px;
+}
+
+nav ul {
+  margin: 0;
+}
+nav ul li {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+}
+@media screen and (min-width: 758px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.container {
+  font-size: 24px;
+}
+
+.button:hover {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+
+.primary-button {
+  padding: 10px 20px;
+  border: none;
+}
+
+.primary-button {
+  background-color: #3498db;
+}
+
+/*# sourceMappingURL=style.css.map */

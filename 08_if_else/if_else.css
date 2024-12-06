@@ -1,0 +1,22 @@
+.box1, .box4, .box3, .box2 {
+  padding: 10px 15px;
+  background-color: darkblue;
+  color: goldenrod;
+}
+
+.box2 {
+  background-color: red;
+  color: yellow;
+}
+
+.box3 {
+  background-color: black;
+  color: white;
+}
+
+.box4 {
+  background-color: red;
+  color: white;
+}
+
+/*# sourceMappingURL=if_else.css.map */
