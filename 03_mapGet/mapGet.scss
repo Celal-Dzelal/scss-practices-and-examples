@@ -2,6 +2,7 @@ $tema: (
   "acik": #fff,
   "koyu": #000,
   "gri": #aaa,
+  "renkli": #1907fb,
 );
 
 $kalinlik: (
@@ -10,11 +11,30 @@ $kalinlik: (
   "kalin": 500,
 );
 
+$size: (
+  "big": 15px,
+  "normal": 10px,
+  "little": 5px,
+);
+
 body {
-  background-color: map-get($tema, "acik");
+  background-color: map-get($tema, "renkli");
 }
 
 h1 {
   color: map-get($tema, "koyu");
   font-weight: map-get($kalinlik, "kalin");
+  padding: map-get($size, "big");
+}
+
+h2 {
+  color: map-get($tema, "gri");
+  font-weight: map-get($kalinlik, "normal");
+  padding: map-get($size, "normal");
+}
+
+h3 {
+  color: map-get($tema, "koyu");
+  font-weight: map-get($kalinlik, "ince");
+  padding: map-get($size, "little");
 }
