@@ -4,32 +4,31 @@
 }
 
 @mixin renk($bc, $c) {
+  //* Parametre kullanarak
   background-color: $bc;
   color: $c;
 }
 
-@mixin threeDots {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+@mixin display {
+  //* Parametre kullanmadan
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.urunList {
-  float: left;
-  border: 1px solid gray;
-  @include boyut(500px, 250px);
-  @include renk(#ebebeb, #000);
-  @include threeDots();
-}
-
-.detay {
-  float: left;
-  @include boyut(300px, 150px);
+.container {
+  @include display();
+  @include boyut(50vw, 50vh);
   @include renk(darkblue, goldenrod);
-  @include threeDots();
-}
 
-.kutu {
-  @include boyut($y: 400px, $g: 600px);
-  //* Parametre yeri değiştirme
+  &__text {
+    @extend .container;
+    @include boyut(30vw, 40vh);
+    @include renk(goldenrod, darkblue);
+  }
+
+  &__text2 {
+    @extend .container;
+    @include boyut($y: 30vw, $g: 40vh); //* Parametre sıralaması değiştirildi
+  }
 }

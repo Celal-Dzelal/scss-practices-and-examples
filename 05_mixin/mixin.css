@@ -1,29 +1,21 @@
-.urunList {
-  float: left;
-  border: 1px solid gray;
-  width: 500px;
-  height: 250px;
-  background-color: #ebebeb;
-  color: #000;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.detay {
-  float: left;
-  width: 300px;
-  height: 150px;
+.container, .container__text2, .container__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
   background-color: darkblue;
   color: goldenrod;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
-
-.kutu {
-  width: 600px;
-  height: 400px;
+.container__text {
+  width: 30vw;
+  height: 40vh;
+  background-color: goldenrod;
+  color: darkblue;
+}
+.container__text2 {
+  width: 40vh;
+  height: 30vw;
 }
 
 /*# sourceMappingURL=mixin.css.map */
